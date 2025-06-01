@@ -1,30 +1,26 @@
-<!--“一个工作室的网站里该写什么？”，WangZixu问道-->
-<!--“我倒是感觉什么都不写才是对的，但好歹装个逼吧”-->
-<!--确实是这样-->
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="zh">
 <head>
-    <meta charset="UTF-8">
-    <meta name="description" content="这里是 MewBaka 笨猫 官方网站！点击即可进入(ฅ´ω`ฅ)"/>
-    <meta name="keywords" content="MewBaka,笨猫"/>
-    <meta name="robots" content="all"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MewBaka 笨猫</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="这里是 MewBaka 笨猫 官方网站！点击即可进入(ฅ´ω`ฅ)" />
+    <meta name="keywords" content="MewBaka,笨猫" />
+    <meta name="robots" content="all" />
+    <title>MewBaka笨猫</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <script src="assets/main.js"></script>
-    <link rel="stylesheet" href="assets/main.css">
+    <link href="assets/main.css" rel="stylesheet">
 </head>
 <body>
-<nav id="mainNav">
+<nav id="mainNav" class="fade-in">
     <div class="logo">
         <img src="assets/images/logo/light.png" alt="MewBaka Logo" id="navLogo">
     </div>
     <ul class="nav-links">
-        <li><a href="https://mewbaka.cn">主页</a></li>
+        <li><a href="https://mewbaka.cn">Index</a></li>
         <li><a href="https://github.com/mewbaka">GitHub</a></li>
         <li><a href="https://blog.mewbaka.cn">Blog</a></li>
         <li><a href="https://demo.mewbaka.cn">Demos</a></li>
-        <li><a href="https://mewbaka.cn/agreement">协议</a></li>
+        <li><a href="https://mewbaka.cn/agreement">Agreement</a></li>
     </ul>
     <div class="mobile-menu-btn">
         <div class="bar"></div>
@@ -32,181 +28,132 @@
         <div class="bar"></div>
     </div>
 </nav>
-<section id="banner">
-    <div class="banner-overlay"></div>
-    <div class="banner-content">
-        <div class="typing-container">
-            <h1 id="typing-title"></h1>
+<div class="container">
+    <div class="content">
+        <div class="hero">
+            <div class="fade-in">
+                <img src="assets/images/xy.png" width="200px" />
+                <h1>MewBaka笨猫</h1>
+                <p>一个简单又笨蛋的视觉小说开发团队</p>
+            </div>
         </div>
-        <p>一个简单又笨蛋的视觉小说开发团队</p>
-        <a href="#about" class="btn">关于我们</a>
-    </div>
-</section>
-<section id="about">
-    <div class="container">
-        <h2 class="section-title">关于我们</h2>
-        <div class="about-content">
-            <div class="about-text">
-                <h3>About Us</h3>
-                <p>
-                    MewBaka于2024.7.1创立，主要制作视觉小说类游戏
+        <div class="main">
+            <h2>关于我们</h2>
+            <h3>About us</h3>
+            <p>MewBaka团队于2024.7.1创立，主要制作视觉小说类游戏</p>
+            <p>同时，MewBaka团队仍着力于制作面向中小规模团队的视觉小说周边产品，创造全新的“工作流体系”，帮助团队更快完成视觉小说的制作与发布</p>
+            <p>让一切都自由且简单，是MewBaka的最终理念。正就是那句：笨蛋也可以改变世界！</p>
+        </div>
 
-                    <br>同时，MewBaka团队仍着力于制作面向中小规模团队的视觉小说周边产品，创造全新的“工作流体系”，帮助团队更快完成视觉小说的制作与发布
-                </p></div>
-            <div class="about-text">
-                <h3>最终理念</h3>
-                <p>
-                    让一切都自由且简单，是MewBaka的最终理念
+        <div id="Projects" class="projects fade-in">
+            <h2>项目</h2>
+            <h3>Projects</h3>
+            <div class="card-grid">
+                <div class="card">
+                    <h4>NarraLeaf</h4>
+                    <small>使用轻量级、可定制且易于使用的视觉小说游戏框架制作你的视觉小说游戏！</small>
+                    <div class="date">发布日期：预计2025.06</div>
+                    <div class="tags"><span>视觉小说周边产品</span></div>
+                    <div class="codename">开发代号：NarraLeaf | 译名：言叶</div>
+                    <div class="buttons">
+                        <a href="https://github.com/narraleaf"><button>GitHub仓库</button></a>
+                        <a href="https://react.narraleaf.com" style="text-decoration: none;"><span class="text-button">了解更多</span></a>
+                    </div>
+                </div>
+                <div class="card">
+                    <h4>视奸Ta的小说!</h4>
+                    <small>全新的，高级的，视奸的，令人害怕的，可部署在GitHub Pages上的视奸神器</small>
+                    <div class="date">发布日期：2025.02</div>
+                    <div class="tags"><span>视觉小说周边产品</span></div>
+                    <div class="codename">开发代号：SSYN | 译名：SeeSeeYourNovel</div>
+                    <div class="buttons">
+                        <a href="https://github.com/mewbaka/seeseeyournovel"><button>GitHub仓库</button></a>
+                        <a href="https://demo.mewbaka.cn/seeseeyournovel" style="text-decoration: none;"><span class="text-button">查看Demo</span></a>
+                    </div>
+                </div>
+                <div class="card">
+                    <h4>侧面PROJECT</h4>
+                    <small>全新异世界冒险类视觉小说《侧面PROJECT》，使用NarraLeaf引擎开发，以MPL-2.0协议开源</small>
+                    <div class="date">发布日期：暂定</div>
+                    <div class="tags"><span>视觉小说作品</span></div>
+                    <div class="codename">开发代号：OSP | 译名：OtherSidePROJECT</div>
+                    <div class="buttons">
+                        <button onclick="alert('如果你成为开发组的一员，那你就能看见这个项目了')">GitHub仓库（停止开放）</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <h4>百合花仍开</h4>
+                    <small>愿那朵象征着我们爱情的百合花，永不凋零｜纯爱百合校园向视觉小说</small>
+                    <div class="date">发布日期：预计2026.03 | 2025.11 开启众筹</div>
+                    <div class="tags"><span>视觉小说作品</span></div>
+                    <div class="codename">开发代号：YuriF | 译名：Yuri Forever</div>
+                    <div class="buttons">
+                    </div>
+                </div>
+            </div>
+        </div>
 
-                    <br>正就是那句：<b>笨蛋也可以改变世界！</b></p></div>
+        <div id="Contact" class="contact fade-in">
+            <h2>联系我们</h2>
+            <h3>Contact Us</h3>
+
+            <div class="contact-item" onclick="copyText('team@mewbaka.cn')">
+                <div class="contact-item-icon"><i class="fas fa-envelope"></i></div>
+                <div class="contact-item-text">
+                    <h4>邮箱</h4>
+                    <small>发送邮件到这里喵~</small>
+                </div>
+            </div>
+
+            <div class="contact-item" onclick="copyText('975654745')">
+                <div class="contact-item-icon"><i class="fab fa-qq"></i></div>
+                <div class="contact-item-text">
+                    <h4>QQ交流群</h4>
+                    <small>欢迎加入猫舍！</small>
+                </div>
+            </div>
+
+            <a class="contact-item" href="https://space.bilibili.com/3546731419535895" target="_blank">
+                <div class="contact-item-icon"><i class="fab fa-bilibili"></i></div>
+                <div class="contact-item-text">
+                    <h4>BiliBili</h4>
+                    <small>在BiliBili上关注我们吧</small>
+                </div>
+            </a>
+
+            <a class="contact-item" href="https://mewbakateam.itch.io/" target="_blank">
+                <div class="contact-item-icon"><i class="fas fa-gamepad"></i></div>
+                <div class="contact-item-text">
+                    <h4>itch.io</h4>
+                    <small>浏览我们发布的游戏</small>
+                </div>
+            </a>
+
+            <a class="contact-item" href="https://github.com/mewbaka" target="_blank">
+                <div class="contact-item-icon"><i class="fab fa-github"></i></div>
+                <div class="contact-item-text">
+                    <h4>GitHub</h4>
+                    <small>浏览我们的项目</small>
+                </div>
+            </a>
+
+            <a class="contact-item" href="https://24a.fun/" target="_blank">
+                <div class="contact-item-icon"><i class="fas fa-user"></i></div>
+                <div class="contact-item-text">
+                    <h4>0x24a的个人主页</h4>
+                    <small>一个在校开发者兼VOCALOID爱好者的介绍</small>
+                </div>
+            </a>
+
         </div>
+
+        <footer>
+            Copyright © 2025 MewBaka 笨猫<br>
+            背景图来源：https://min-chi.material.jp/
+        </footer>
     </div>
-</section>
-<section id="projects">
-    <div class="container">
-        <h2 class="section-title">项目</h2>
-        <div class="projects-grid">
-            <div class="project-card">
-                <div class="project-header">
-                    <h3 class="project-title">NarraLeaf</h3>
-                    <p class="project-subtitle">言叶</p>
-                    <div class="project-tags">
-                        <span class="project-tag">视觉小说周边产品</span>
-                    </div>
-                </div>
-                <div class="project-content">
-                    <p class="project-description">
-                        使用轻量级、可定制且易于使用的视觉小说游戏框架制作你的视觉小说游戏！</p>
-                    <div class="project-meta">
-                        <span class="project-code">开发代号：NarraLeaf</span>
-                        <span class="project-date">预计 2025.6 发布</span>
-                    </div>
-                    <div class="project-actions">
-                        <a href="https://react.narraleaf.com/zh-CN" class="btn btn-primary">前往官网</a>
-                    </div>
-                </div>
-            </div>
-            <div class="project-card">
-                <div class="project-header">
-                    <h3 class="project-title">视奸Ta的小说!</h3>
-                    <p class="project-subtitle">SeeSeeYourNovel</p>
-                    <div class="project-tags">
-                        <span class="project-tag">视觉小说周边产品</span>
-                    </div>
-                </div>
-                <div class="project-content">
-                    <p class="project-description">
-                        全新的，高级的，视奸的，令人害怕的，可部署在GitHub Pages上的视奸神器</p>
-                    <div class="project-meta">
-                        <span class="project-code">开发代号: SSYN</span>
-                        <span class="project-date">已发布</span>
-                    </div>
-                    <div class="project-actions">
-                        <a href="https://github.com/MewBaka/SeeSeeYourNovel" class="btn btn-primary">GitHub</a>
-                        <a href="https://demo.mewbaka.cn/seeseeyournovel" class="btn btn-text">在线Demo</a>
-                    </div>
-                </div>
-            </div>
-            <div class="project-card">
-                <div class="project-header">
-                    <h3 class="project-title">侧面PROJECT</h3>
-                    <p class="project-subtitle">OtherSidePROJECT</p>
-                    <div class="project-tags">
-                        <span class="project-tag">视觉小说游戏</span>
-                    </div>
-                </div>
-                <div class="project-content">
-                    <p class="project-description">
-                        全新异世界冒险类视觉小说《侧面PROJECT》，使用NarraLeaf引擎开发，以MPL-2.0协议开源</p>
-                    <div class="project-meta">
-                        <span class="project-code">开发代号: OSP</span>
-                        <span class="project-date">无具体发布日期</span>
-                    </div>
-                </div>
-            </div>
-            <div class="project-card">
-                <div class="project-header">
-                    <h3 class="project-title">百合花仍开</h3>
-                    <p class="project-subtitle">Yuri Forever</p>
-                    <div class="project-tags">
-                        <span class="project-tag">视觉小说游戏</span>
-                    </div>
-                </div>
-                <div class="project-content">
-                    <p class="project-description">
-                        愿那朵象征着我们爱情的百合花，永不凋零｜纯爱百合校园向视觉小说</p>
-                    <div class="project-meta">
-                        <span class="project-code">开发代号: YuriF</span>
-                        <span class="project-date">预计 2026.3 发布</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-<section id="connect">
-    <div class="container">
-        <h2 class="section-title">联系我们</h2>
-        <div class="connect-container">
-            <div class="contact-card">
-                <div class="contact-icon">
-                    <i class="fas fa-envelope"></i>
-                </div>
-                <div class="contact-content">
-                    <h3 class="contact-title">邮箱</h3>
-                    <p class="contact-info">team@mewbaka.cn</p>
-                    <div class="contact-action" onclick="copyToClipboard('team@mewbaka.cn')">点击复制</div>
-                </div>
-            </div>
-            <div class="contact-card">
-                <div class="contact-icon">
-                    <i class="fab fa-qq"></i>
-                </div>
-                <div class="contact-content">
-                    <h3 class="contact-title">QQ交流群</h3>
-                    <p class="contact-info">975654745</p>
-                    <div class="contact-action" onclick="copyToClipboard('975654745')">点击复制</div>
-                </div>
-            </div>
-            <div class="contact-card">
-                <div class="contact-icon">
-                    <i class="fab fa-bilibili"></i>
-                </div>
-                <div class="contact-content">
-                    <h3 class="contact-title">BiliBili</h3>
-                    <p class="contact-info">MewBaka官方B站</p>
-                    <a href="https://space.bilibili.com/3546731419535895" target="_blank"
-                       class="contact-action">访问频道</a>
-                </div>
-            </div>
-            <div class="contact-card">
-                <div class="contact-icon">
-                    <i class="fas fa-gamepad"></i>
-                </div>
-                <div class="contact-content">
-                    <h3 class="contact-title">itch.io</h3>
-                    <p class="contact-info">游戏作品发布</p>
-                    <a href="https://mewbakateam.itch.io/" target="_blank" class="contact-action">访问主页</a>
-                </div>
-            </div>
-            <div class="contact-card">
-                <div class="contact-icon">
-                    <i class="fab fa-github"></i>
-                </div>
-                <div class="contact-content">
-                    <h3 class="contact-title">GitHub</h3>
-                    <p class="contact-info">开源项目仓库</p>
-                    <a href="https://github.com/mewbaka" target="_blank" class="contact-action">访问主页</a>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-<footer>
-    <div class="container">
-        <p>Copyright © 2025 MewBaka 笨猫</p>
-        <p>背景图来源：<a href="https://min-chi.material.jp/" target="_blank">https://min-chi.material.jp/</a></p>
-    </div>
-</footer>
+</div>
+
+    <script src="assets/main.js"></script>
 </body>
 </html>
