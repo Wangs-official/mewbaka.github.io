@@ -1,6 +1,6 @@
 function copyText(text) {
     navigator.clipboard.writeText(text).then(() => {
-        alert(`已复制: ${text}`);
+        alert(`已经复制到主人的剪贴板里面了！: ${text}`);
     });
 }
 
@@ -24,10 +24,10 @@ const navLogo = document.getElementById('navLogo');
 window.addEventListener('scroll', function() {
     if (window.scrollY > 100) {
         nav.classList.add('scrolled');
-        navLogo.src = "assets/images/logo/dark.png";
+        navLogo.src = "assets/images/logo/dark.webp";
     } else {
         nav.classList.remove('scrolled');
-        navLogo.src = "assets/images/logo/light.png";
+        navLogo.src = "assets/images/logo/light.webp";
     }
 });
 
